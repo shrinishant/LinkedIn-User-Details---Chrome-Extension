@@ -1,0 +1,20 @@
+{
+    "name": "LinkedIn Task-2",
+    "description": "Build a basic Extension!",
+    "version": "1.0.4",
+    "manifest_version": 2,
+    "permissions": [
+        "tabs", "<all_urls>"
+      ],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+      "default_popup": "Popup.html",
+      "default_title": "A-T-G"
+    }
+    
+  }
